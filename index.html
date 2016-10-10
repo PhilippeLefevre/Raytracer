@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Raytracer : Le Raytracer est un projet Epitech.  Il consiste a reproduire une méthode de raytracing au moyen de formules brute">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Raytracer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/PhilippeLefevre/Raytracer">View on GitHub</a>
+
+          <h1 id="project_title">Raytracer</h1>
+          <h2 id="project_tagline">Le Raytracer est un projet Epitech.  Il consiste a reproduire une méthode de raytracing au moyen de formules brute</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/PhilippeLefevre/Raytracer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/PhilippeLefevre/Raytracer/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="raytracer" class="anchor" href="#raytracer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Raytracer</h1>
+
+<h2>
+<a id="credit-" class="anchor" href="#credit-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credit :</h2>
+
+<ul>
+<li>Sousa Victor
+
+<ul>
+<li>Linkedin : <a href="https://fr.linkedin.com/in/victor-sousa-1abb64109">https://fr.linkedin.com/in/victor-sousa-1abb64109</a>
+</li>
+<li>Github : <a href="https://github.com/sousav">https://github.com/sousav</a>
+</li>
+</ul>
+</li>
+<li>Gaëtan Léandre
+
+<ul>
+<li>Linkedin : <a href="https://fr.linkedin.com/in/ga%C3%ABtan-l%C3%A9andre-7a22b3107/fr">https://fr.linkedin.com/in/gaëtan-léandre-7a22b3107/fr</a>
+</li>
+<li>Github : <a href="https://github.com/leandrg">https://github.com/leandrg</a>
+</li>
+</ul>
+</li>
+<li>Philippe Lefevre
+
+<ul>
+<li>Linkedin : <a href="https://fr.linkedin.com/in/philippe-lefevre">https://fr.linkedin.com/in/philippe-lefevre</a>
+</li>
+<li>Github : <a href="https://github.com/PhilippeLefevre">https://github.com/PhilippeLefevre</a>
+</li>
+</ul>
+</li>
+<li>Ethan Kerdelhue
+
+<ul>
+<li>Linkedin : <a href="https://fr.linkedin.com/in/ethan-kerdelhue-758028109">https://fr.linkedin.com/in/ethan-kerdelhue-758028109</a>
+</li>
+<li>Github : <a href="https://github.com/ethanke">https://github.com/ethanke</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="note--385" class="anchor" href="#note--385" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note : 38.5</h2>
+
+<ul>
+<li>Préliminaires (2 / 2) : RAS</li>
+<li>Savoir-vivre (0 / 0) : Tous le groupe est en costume.</li>
+<li>Norme et warnings (0 / 0) : </li>
+<li>Initiative (0.5 / 0.5) : Le groupe prend l'initiative pour sa présentation.</li>
+<li>Tenue vestimentaire (0.5 / 0.5) : Groupe en costume</li>
+<li>Plan (1 / 1) : Un support PPT est utilisé. La progression est logique.</li>
+<li>Qualité orale de la présentation (1 / 1) : Les fonctionnalitésdu projets sont mises en valeur, le discours est globalement clair.</li>
+<li>Qualité du support de présentation (1.5 / 1.5) : Le support de présentation est propre, sans faute, des illustrations pertinentes sont utilisées.</li>
+<li>Le projet fait parti de la présentation.</li>
+<li>Partage du temps de parole (0.5 / 0.5) : Le groupe se partage le temps de parole.</li>
+<li>Chargement de carte (0 / 0) : OK</li>
+<li>Fenêtre (0 / 0) : OK</li>
+<li>Sphère, Plan, Cylindre, Cône (0 / 0) : OK</li>
+<li>Translations et Rotations (0 / 0) : OK</li>
+<li>Spot et Ombres (0 / 0) : OK</li>
+<li>Brillance (0 / 0) : OK</li>
+<li>Lumière d'ambiance (0.5 / 1) : Lumière d'ambiance, couleur non configurable</li>
+<li>Objets limités (1 / 2) : cylindre et cône limité, triangle</li>
+<li>Format du fichier de scène (1 / 1) : Format XML</li>
+<li>Réflexion (2.5 / 2.5) : Réflexion avec limitation, intérieur d'objets réfléchissant</li>
+<li>Transparence (1 / 2) : Transparence avec réfraction</li>
+<li>Lumière directe (0.5 / 1) : Pas d'éblouissement après réfraction</li>
+<li>Perturbations de la normale (2 / 2) : Bump-map, tôle ondulée</li>
+<li>Perturbations de la couleur (3 / 4) : Damier</li>
+<li>Bruit de perlin</li>
+<li>Texture (1 / 2) : Texture sur sphere, skybox</li>
+<li>Objets composés (0.5 / 0.5) : Pilule</li>
+<li>Perturbations de caractéristique (1 / 1) : Indice de réfraction, coeefficient de réflexion, taux de transparence</li>
+<li>Objets négatif (0 / 2) : Non géré</li>
+<li>Image de fond (0.5 / 0.5) : OK</li>
+<li>Stéréoscopie (0 / 0.5) : Pas de stéréoscopie</li>
+<li>Menu (0.5 / 0.5) : Une interface a été réalisée en C++ avec QT</li>
+<li>Barre de chargement (0.5 / 0.5) : Pas de barre de chargement mais la génération s'affiche étape par étape</li>
+<li>Import de formats du commerce (1 / 2) : Gestion des .OBJ</li>
+<li>Plugin (1 / 2) : Triangle, pilule en supplément</li>
+<li>Modification de la scène en fonctionnement (0.5 / 0.5) : Modification live via l'interface</li>
+<li>Calcul en cluster (3 / 4) : Calcul en cluster Threads, Réseau</li>
+<li>Export de l'image calculé (0.5 / 0.5) : OK</li>
+<li>Ruban de Moebius (0 / 6) : Pas de ruban de Moebius</li>
+<li>Objets exotiques autre (0 / 4) : Pas d'autres objets supplémentaires</li>
+<li>Bonus à la carte (10 / 10) : Filtres de couleur (noir et blanc, sepia, negatif), Matériaux procéduraux (matériaux prédéfinis (bois, marbre, arc en ciel, circulaire), Chat sur le clustering en réseau, Gestion de droits sur le client du cluster, Stockage en ligne (sur le serveur) de l'image générée, Edition complète en live via l'interface graphique, Anti aliasing, Skybox, Version complète du raytracer en C++, Ombres diffuses</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Raytracer maintained by <a href="https://github.com/PhilippeLefevre">PhilippeLefevre</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
