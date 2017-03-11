@@ -5,7 +5,7 @@
 ** Login   <sousa_v@epitech.net>
 **
 ** Started on  Tue Feb  9 01:50:10 2016 victor sousa
-** Last update Sun May 22 17:00:57 2016 Philippe Lefevre
+** Last update	Sat Mar 11 03:02:24 2017 Philippe Lefevre
 */
 
 #include		"main.h"
@@ -14,7 +14,7 @@ int			disp_help(char *bin)
 {
   my_printf(1, "Usage:	%s	scene[.xml|.obj]\n", bin);
   my_printf(1, "			--thread=nb_thread\n");
-  my_printf(1, "			--display_rendu\n");
+  my_printf(1, "			--rendu_display\n");
   my_printf(1, "			--rendu_verticale\n");
   my_printf(1, "			--verbose\n");
   my_printf(1, "			--quiet\n");

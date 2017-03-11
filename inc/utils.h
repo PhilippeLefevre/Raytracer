@@ -5,13 +5,15 @@
 ** Login   <sousa_v@epitech.net>
 **
 ** Started on  Tue Feb  9 05:29:22 2016 victor sousa
-** Last update Sun May 22 17:22:39 2016 Philippe Lefevre
+** Last update	Sat Mar 11 03:03:26 2017 Philippe Lefevre
 */
 
 #ifndef			UTILS_H_
 # define		UTILS_H_
 
 # include		"main.h"
+
+# define		M_PI		3.14159265358979323846264338327
 
 # define 		DTR(ang) 	((ang) / 180.0 * M_PI)
 # define		RTD(rad) 	((rad) * (180.0 / M_PI))
